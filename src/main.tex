@@ -1,0 +1,105 @@
+%! Author = Güney
+%! Date = 2024-11-21
+\documentclass[12pt]{article}
+\usepackage{setspace}
+\doublespacing
+
+% Fonts and Aesthetics
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype} % Better font spacing
+
+% Math Packages
+\usepackage[intlimits]{amsmath}
+\usepackage{amssymb} % For better math formatting
+\usepackage{pgfplots}
+\usepackage{siunitx}
+
+% Geometry for Page Margins
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    bottom=16mm,
+    top=16mm
+}
+
+% Graphics and Figures
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float} % Better control over float placement
+\usepackage{tikz}  % For drawing diagrams
+
+% Fancyhdr for Headers and Footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\fancyhead[L]{\leftmark } % Section title on the left
+\fancyhead[R]{\thepage} % Page number on the right
+\renewcommand{\headrulewidth}{0.4pt} % Header rule thickness
+\renewcommand{\footrulewidth}{0.4pt} % Footer rule thickness
+
+% References and Bibliography
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[
+    style=numeric,
+    backend=biber
+]{biblatex} % For bibliography
+\addbibresource{main.bib}
+\usepackage[defaultlines=4,all]{nowidow}
+\usepackage{lastpage}
+
+% Hyperlinks and References
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    citecolor=black
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={PDFTITLE},
+    bookmarks=true,
+}
+
+% Cleveref for Smart References
+\usepackage{cleveref}
+
+% Title and Section Formatting
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Multi-column for organizing equations or text
+\usepackage{multicol}
+\setlength{\columnseprule}{1pt}
+
+% Customize Paragraph Spacing
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{blindtext} % Adds space between paragraphs
+
+
+\begin{document}
+
+\input{titlepage}
+
+\clearpage
+
+\tableofcontents
+
+\clearpage
+
+
+
+\clearpage
+
+\printbibliography[
+    heading=bibintoc,
+    title= {Bibliography}
+]\label{sec:bibliography}
+
+\end{document}

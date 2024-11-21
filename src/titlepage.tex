@@ -1,0 +1,38 @@
+%! suppress = MissingDocumentclass
+%! suppress = MissingDocumentEnvironment
+%! suppress = MissingDocumentEnvironment
+%! suppress = MissingDocumentEnvironment
+
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		\Huge
+		\textbf{Big Title}
+		
+		\vspace{1cm}
+		\Large
+		\textbf{Medium Title}
+		
+		\vspace{1.5cm}
+		
+		Main Title
+		
+		\vfill
+		
+		May 2025
+		
+		\vspace{0.8cm}
+		
+		Page Count:~\pageref*{LastPage}
+		
+		\vspace{0.8cm}
+		
+		Word Count: \input{|"texcount main.tex | grep 'Words in text' | awk '{print $4}'"}
+		
+		\vspace{0.8cm}
+		
+		\today
+	
+	\end{center}
+\end{titlepage}
