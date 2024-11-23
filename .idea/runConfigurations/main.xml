@@ -6,16 +6,16 @@
       <sumatra-path />
       <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
       <viewer-command />
-      <compiler-arguments />
+      <compiler-arguments>--shell-escape</compiler-arguments>
       <envs />
       <before-run-command />
       <main-file>$PROJECT_DIR$/src/main.tex</main-file>
-      <output-path>{projectDir}/out</output-path>
-      <auxil-path>{projectDir}/auxil</auxil-path>
+      <output-path>$PROJECT_DIR$/out</output-path>
+      <auxil-path>$PROJECT_DIR$/auxil</auxil-path>
       <compile-twice>true</compile-twice>
       <output-format>PDF</output-format>
-      <latex-distribution>MIKTEX</latex-distribution>
-      <has-been-run>false</has-been-run>
+      <latex-distribution>WSL_TEXLIVE</latex-distribution>
+      <has-been-run>true</has-been-run>
       <bib-run-config>[BibTeX.main bibliography]</bib-run-config>
       <makeindex-run-config>[]</makeindex-run-config>
     </texify>
